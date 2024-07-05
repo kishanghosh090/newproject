@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body,html {
     background-image: url('https://www.scdn.co/i/free/bubbles-mobile.svg');
     backdrop-filter: blur(10px);
 }
+
 /* :root{
     --bs-tertiary-bg-rgb:  rgba(255, 255, 255, 0.5);
 } */
@@ -14,9 +16,10 @@ body{
     width: 90%;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
-   background-color: rgba(255, 255, 255, 0.2);
-   backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -25,18 +28,22 @@ body{
     /* background-color: rgba(255, 255, 255, 0.2)!important;
     backdrop-filter: blur(20px); */
 }
-.navbar-collapse ul{
+
+.navbar-collapse ul {
     margin-left: 10rem;
     display: flex;
     gap: 3rem;
 }
-.container-fluid{
+
+.container-fluid {
     font-weight: 700;
 }
-.container-fluid a span{
+
+.container-fluid a span {
     color: red;
 }
-.hero{
+
+.hero {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -44,7 +51,8 @@ body{
     justify-content: center;
     gap: 4rem;
 }
-.intro{
+
+.intro {
     /* border: 2px solid white; */
     width: 53%;
     padding: 1rem;
@@ -57,23 +65,28 @@ body{
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 0.5rem;
 }
-.hero .intro .my-inrto{
+
+.hero .intro .my-inrto {
     font-size: 1.2rem;
-    color: rgba(255,255, 255, 0.3);
-    
+    color: rgba(255, 255, 255, 0.3);
+
 }
-.hero .intro .name{
+
+.hero .intro .name {
     font-size: 4rem;
     font-weight: 600;
 }
-.hero .intro .my-details{
+
+.hero .intro .my-details {
     font-size: 1.4rem;
     font-weight: 500;
 }
-.hero .intro .contact-me{
+
+.hero .intro .contact-me {
     margin-top: 2rem;
 }
-.hero .intro .contact-me button{
+
+.hero .intro .contact-me button {
     height: 3rem;
     width: 9rem;
     background: purple;
@@ -83,23 +96,89 @@ body{
     font-weight: 600;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
 }
-.hero .intro .contact-me button:hover{
+
+.hero .intro .contact-me button:hover {
     background-color: white;
     color: purple;
 }
-.pic-box{
-    border: 1px solid white;
-    height: 34rem;
+
+.pic-box {
+    height: 40rem;
     width: 26rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    backdrop-filter: blur(46px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+
+.hero .pic-box .my-img img{
+    height: 10rem;
+    width: 10rem;
+    background-color: black;
+    border: 2px slid black;
+    border-radius: 50%;
+    transition: all 0.4s ease-out;
+    position: relative;
+    top: -89px;
+}
+.hero .pic-box .my-img img:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 25px red;
+}
+.hero .pic-box .my-box-name {
+    font-weight: 700;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 66px;
+
 }
 
+.hero .pic-box .known-languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2rem;
+}
 
+.hero .pic-box .known-languages div{
+    background-color: white;
+    color: #e8e0e0;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.hero .pic-box .known-languages div:hover{
+    animation: up-down 0.5s;
+    transition: all 0.5s ease-out;
+}
 
+@keyframes up-down{
+    0%{
+        transform: scale(1.1)translateY(-5px);
+    }
+    50%{
+        transform: scale(1.2)translateY(-10px)
+    }
+    100%{
+        transform: scale(1)translateY(0px);
+    }
+}
 
-
-
-
-
+.bx {
+    color: #b737da;
+    font-size: 3rem;
+}
 
 
 
@@ -114,10 +193,11 @@ body{
 
 /* about ******************************************************************* */
 
-.progress{
+.progress {
     width: 15rem;
 }
-.about{
+
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +205,8 @@ body{
     flex-direction: column;
 
 }
-.techs{
+
+.techs {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +214,8 @@ body{
     gap: 2rem;
     flex-wrap: wrap;
 }
-.tech{
+
+.tech {
     background-color: rgb(18, 18, 4);
     height: 13rem;
     width: 27rem;
@@ -143,7 +225,8 @@ body{
     gap: 1rem;
     border-radius: 0.5rem;
 }
-.tech1{
+
+.tech1 {
     background-color: rgb(18, 18, 4);
     height: 13rem;
     width: 56rem;
@@ -153,24 +236,29 @@ body{
     gap: 1rem;
     border-radius: 0.5rem;
 }
-.tech-name1{
+
+.tech-name1 {
     display: flex;
     flex-direction: column;
 }
-.tech-name1 .icon{
+
+.tech-name1 .icon {
     font-size: 2rem;
     color: red;
     font-weight: 700;
 }
-.tech-name1 h4{
+
+.tech-name1 h4 {
     font-size: 1.5rem;
 }
-.tech-name{
+
+.tech-name {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
 }
-.tech-name .icon{
+
+.tech-name .icon {
     font-size: 3rem;
     color: red;
 }
